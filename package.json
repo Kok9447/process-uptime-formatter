@@ -1,0 +1,17 @@
+{
+  "name": "process-uptime-formatter",
+  "version": "0.1.0",
+  "description": "Converts a millisecond duration into a readable string with selectable unit and precision.",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": "./src/index.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [],
+  "license": "BSD-3-Clause",
+  "dependencies": {}
+}
