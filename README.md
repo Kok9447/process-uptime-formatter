@@ -34,3 +34,10 @@ Rounding happens at the precision unit, and a rounded remainder can overflow the
 - `UptimeFormatter` — class holding a clock, a default unit, and a default precision. `format({ unit, precision })` applies per-call overrides.
 
 All exported names are also re-exported from `src/index.js`.
+
+## Performance
+
+The window keeps a bounded buffer, so `push` is constant time and memory does not
+grow with the length of the stream. `peak` and `trough` are linear in the window
+size, which is the trade that keeps `push` cheap.
+
